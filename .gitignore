@@ -1,3 +1,14 @@
+build/
+_build/
+dist/
+build-dir/
+_build-dir/
+dist-dir/
+.bundle/
+
+.flatpak-builder/
+
+
 # Prerequisites
 *.d
 
