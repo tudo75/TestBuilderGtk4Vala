@@ -34,7 +34,6 @@ namespace Testbuildergtk4vala {
 
         public override void activate () {
             base.activate ();
-            // Gtk.Settings.get_default().set("gtk-application-prefer-dark-theme", true);
             Adw.StyleManager.get_default ().color_scheme = PREFER_DARK;
             var win = this.active_window;
             if (win == null) {
