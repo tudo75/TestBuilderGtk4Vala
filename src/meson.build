@@ -21,7 +21,6 @@ executable(
   'testbuildergtk4vala', 
   testbuildergtk4vala_sources,
   vala_args: '--target-glib=2.50',
-  link_args: '-Wl,--subsystem,windows',
   dependencies: testbuildergtk4vala_deps,
   install: true,
 )
