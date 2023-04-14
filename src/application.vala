@@ -47,7 +47,7 @@ namespace Testbuildergtk4vala {
             Gtk.show_about_dialog (this.active_window,
                                    "program-name", "testbuildergtk4vala",
                                    "authors", authors,
-                                   "version", "0.1.0");
+                                   "version", "0.1.1");
         }
 
         private void on_preferences_action () {
