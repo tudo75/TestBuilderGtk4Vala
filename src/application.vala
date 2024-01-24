@@ -69,12 +69,6 @@ namespace Testbuildergtk4vala {
             dialog.website = "http://github.com/tudo75/TestBuilderGtk4Vala";
             dialog.website_label = "Repository Github";
 
-            dialog.response.connect ((response_id) => {
-                if (response_id == Gtk.ResponseType.CANCEL || response_id == Gtk.ResponseType.DELETE_EVENT) {
-                    dialog.hide_on_delete ();
-                }
-            });
-
             // Show the dialog:
             dialog.present ();
         }
