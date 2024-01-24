@@ -16,6 +16,7 @@
                                 <property name="title">Testbuildergtk4vala</property>
                             </object>
                         </property>
+                    </object>
                 </child>
                 <child>
                     <object class="GtkMenuButton">
