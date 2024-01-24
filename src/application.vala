@@ -43,8 +43,8 @@ namespace Testbuildergtk4vala {
         }
 
         private void on_about_action () {
-            / Configure the dialog:
-            Gtk.AboutDialog dialog = new Gtk.AboutDialog ();
+            // Configure the dialog:
+            Adw.AboutDialog dialog = new Adw.AboutDialog ();
             dialog.set_destroy_with_parent (true);
             dialog.set_transient_for (this.active_window);
             dialog.set_modal (true);
@@ -59,21 +59,15 @@ namespace Testbuildergtk4vala {
             dialog.documenters = {"tudo75"};
             dialog.translator_credits = ("tudo75");
 
-            dialog.program_name = APP_NAME;
+            dialog.program_name = "TestBuilderGtk4Vala";
             dialog.comments = _("TestBuilderGtk4Vala");
             dialog.copyright = _("Copyright 2022-2023 tudo75");
-            dialog.version = VERSION;
+            dialog.version = "0.1.2";
 
             dialog.set_license_type (Gtk.License.GPL_3_0_ONLY);
 
             dialog.website = "http://github.com/tudo75/TestBuilderGtk4Vala";
             dialog.website_label = "Repository Github";
-
-            dialog.response.connect ((response_id) => {
-                if (response_id == Gtk.ResponseType.CANCEL || response_id == Gtk.ResponseType.DELETE_EVENT) {
-                    dialog.hide_on_delete ();
-                }
-            });
 
             // Show the dialog:
             dialog.present ();
