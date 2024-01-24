@@ -4,7 +4,7 @@
   <template class="Testbuildergtk4valaWindow" parent="AdwApplicationWindow">
     <property name="default-width">600</property>
     <property name="default-height">300</property>
-    <child type="titlebar">
+    <child type="headerbar">
       <object class="AdwHeaderBar" id="header_bar">
         <child type="end">
           <object class="GtkMenuButton">
