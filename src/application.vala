@@ -35,10 +35,7 @@ namespace Testbuildergtk4vala {
         public override void activate () {
             base.activate ();
             Adw.StyleManager.get_default ().color_scheme = PREFER_DARK;
-            Adw.ApplicationWindow win = (Adw.ApplicationWindow) this.active_window;
-            if (win == null) {
-                win = new Testbuildergtk4vala.Window (this);
-            }
+            var win = new Testbuildergtk4vala.Window (this);
             win.present ();
         }
 
