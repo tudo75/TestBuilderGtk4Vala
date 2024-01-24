@@ -16,13 +16,13 @@
                                 <property name="title">Testbuildergtk4vala</property>
                             </object>
                         </property>
+                        <child>
+                            <object class="GtkMenuButton">
+                                <property name="icon-name">open-menu-symbolic</property>
+                                <property name="menu-model">primary_menu</property>
+                            </object>
+                        </child>
                     </object>
-                    <object class="GtkMenuButton">
-                        <property name="icon-name">open-menu-symbolic</property>
-                        <property name="menu-model">primary_menu</property>
-                    </object>
-                </child>
-                <child>
                 </child>
                 <child>
                     <object class="GtkLabel" id="label">
