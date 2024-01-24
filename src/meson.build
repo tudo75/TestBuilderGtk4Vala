@@ -24,5 +24,5 @@ executable(
   win_subsystem: 'windows',
   dependencies: testbuildergtk4vala_deps,
   install: true,
-  gui_app: true,
+  #gui_app: true,
 )
