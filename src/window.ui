@@ -1,50 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
-  <requires lib="gtk" version="4.0"/>
-  <template class="Testbuildergtk4valaWindow" parent="AdwApplicationWindow">
-    <property name="default-width">800</property>
-    <property name="default-height">400</property>
-    <child>
-      <object class="AdwHeaderBar" id="header_bar">
-        <property name="title-widget">
-        <object class="AdwWindowTitle">
-          <property name="subtitle">Testbuildergtk4vala</property>
-          <property name="title">Testbuildergtk4vala</property>
-        </object>
+    <requires lib="gtk" version="4.0"/>
+    <requires lib="libadwaita" version="1.1"/>
+    <template class="Testbuildergtk4valaWindow" parent="AdwApplicationWindow">
+        <property name="default-width">800</property>
+        <property name="default-height">400</property>
+        <property name="content">
+            <object class="GtkBox">
+                <property name="orientation">vertical</property>
+                <child>
+                    <object class="AdwHeaderBar" id="header_bar">
+                        <property name="title-widget">
+                            <object class="AdwWindowTitle">
+                                <property name="subtitle">Testbuildergtk4vala</property>
+                                <property name="title">Testbuildergtk4vala</property>
+                            </object>
+                        </property>
+                </child>
+                <child>
+                    <object class="GtkMenuButton">
+                        <property name="icon-name">open-menu-symbolic</property>
+                        <property name="menu-model">primary_menu</property>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkLabel" id="label">
+                        <property name="label">Hello, World!</property>
+                        <attributes>
+                        <attribute name="weight" value="bold"/>
+                        <attribute name="scale" value="2"/>
+                        </attributes>
+                    </object>
+                </child>
+            </object>
         </property>
-        <child>
-          <object class="GtkMenuButton">
-            <property name="icon-name">open-menu-symbolic</property>
-            <property name="menu-model">primary_menu</property>
-          </object>
-        </child>
-      </object>
-    </child>
-    <child>
-      <object class="GtkLabel" id="label">
-        <property name="label">Hello, World!</property>
-        <attributes>
-          <attribute name="weight" value="bold"/>
-          <attribute name="scale" value="2"/>
-        </attributes>
-      </object>
-    </child>
-  </template>
+    </template>
 
-  <menu id="primary_menu">
-    <section>
-      <item>
-        <attribute name="label" translatable="yes">_Preferences</attribute>
-        <attribute name="action">app.preferences</attribute>
-      </item>
-      <item>
-        <attribute name="label" translatable="yes">_Keyboard Shortcuts</attribute>
-        <attribute name="action">win.show-help-overlay</attribute>
-      </item>
-      <item>
-        <attribute name="label" translatable="yes">_About testbuildergtk4vala</attribute>
-        <attribute name="action">app.about</attribute>
-      </item>
-    </section>
-  </menu>
+    <menu id="primary_menu">
+        <section>
+        <item>
+            <attribute name="label" translatable="yes">_Preferences</attribute>
+            <attribute name="action">app.preferences</attribute>
+        </item>
+        <item>
+            <attribute name="label" translatable="yes">_Keyboard Shortcuts</attribute>
+            <attribute name="action">win.show-help-overlay</attribute>
+        </item>
+        <item>
+            <attribute name="label" translatable="yes">_About testbuildergtk4vala</attribute>
+            <attribute name="action">app.about</attribute>
+        </item>
+        </section>
+    </menu>
 </interface>
