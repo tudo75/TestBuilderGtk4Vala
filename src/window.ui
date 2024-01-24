@@ -4,9 +4,15 @@
   <template class="Testbuildergtk4valaWindow" parent="AdwApplicationWindow">
     <property name="default-width">600</property>
     <property name="default-height">300</property>
-    <child type="headerbar">
+    <child>
       <object class="AdwHeaderBar" id="header_bar">
-        <child type="end">
+        <property name="title-widget">
+        <object class="AdwWindowTitle">
+          <property name="subtitle" translatable="yes">systemd System and Service Manager UI</property>
+          <property name="title" translatable="yes">systemdADM</property>
+        </object>
+        </property>
+        <child>
           <object class="GtkMenuButton">
             <property name="icon-name">open-menu-symbolic</property>
             <property name="menu-model">primary_menu</property>
