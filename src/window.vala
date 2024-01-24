@@ -18,11 +18,11 @@
 
 namespace Testbuildergtk4vala {
     [GtkTemplate (ui = "/com/example/test/builder/gtk4/vala/window.ui")]
-    public class Window : Gtk.ApplicationWindow {
+    public class Window : Adw.ApplicationWindow {
         [GtkChild]
         private unowned Gtk.Label label;
 
-        public Window (Gtk.Application app) {
+        public Window (Adw.Application app) {
             Object (application: app);
         }
     }
