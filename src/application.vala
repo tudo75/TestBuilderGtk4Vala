@@ -60,8 +60,8 @@ namespace Testbuildergtk4vala {
             dialog.translator_credits = ("tudo75");
 
             dialog.program_name = "TestBuilderGtk4Vala";
-            dialog.comments = _("TestBuilderGtk4Vala");
-            dialog.copyright = _("Copyright 2022-2023 tudo75");
+            dialog.comments = "TestBuilderGtk4Vala";
+            dialog.copyright = "Copyright 2022-2023 tudo75";
             dialog.version = "0.1.2";
 
             dialog.set_license_type (Gtk.License.GPL_3_0_ONLY);
