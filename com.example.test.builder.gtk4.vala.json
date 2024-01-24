@@ -1,7 +1,7 @@
 {
     "app-id" : "com.example.test.builder.gtk4.vala",
     "runtime" : "org.gnome.Platform",
-    "runtime-version": "44",
+    "runtime-version": "45",
     "sdk" : "org.gnome.Sdk",
     "command" : "testbuildergtk4vala",
     "finish-args" : [
